@@ -1,0 +1,135 @@
+:root {
+    --font1: 1rem Poppins;
+    --font2: 0.85rem Raleway;
+    --font3: 1rem "Moonlights on the Beach";
+}
+
+body{
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+.logo{
+    font: 2rem Afterglow;
+}
+
+.othernav{
+    font: var(--font2);
+}
+
+
+/* .bgimg{ */
+    /* border-style: solid;
+  border-width: 1px;
+  width: auto;
+  height: ;
+} */
+
+/* background-image: url(img/ads1.png);
+
+
+
+} */
+
+.heading{
+    margin: 0;
+    
+    font: var(--font1);
+    font-size: 4rem;
+    font-weight: semi-bold;
+}
+
+.hello{
+    font: var(--font2);
+    font-size: 1rem;
+}
+
+.coverimage{
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: auto;
+}
+
+.buttonhover:hover {
+    background: #7d4323;
+  }
+
+
+.secondheading{
+    font: var(--font2);
+    font-size: 0.85rem; 
+    color: #7d4323;
+  
+}
+
+.second1heading{
+    font: var(--font1);
+    font-size: 2rem; 
+    font-weight: bolder;
+   margin-top: -5px;
+    
+}
+
+
+.uppertext{
+    font: var(--font1);
+    font-size: 1rem; 
+    font-weight: bold;
+}
+
+.lowertext{
+    font: var(--font2);
+    font-size: 0.75rem; 
+    font-weight: light;
+    color: #7d4323;
+    font-style: italic;
+}
+
+.ourstory{
+    font: var(--font1);
+    font-size: 2rem;
+}
+
+.thestory{
+    font:var(--font2);
+    font-size: 0.85rem;
+    align : "justify";
+}
+
+.sub{
+    font: var(--font3);
+    font-size: larger;
+    color: #7d4323;
+}
+
+.menu{
+    background-image: url(img/menu1.jpg);
+font: var(--font3);
+    background-repeat: no-repeat;
+  
+  padding-top: 100px;
+}
+
+.cake{
+    background-image: url(img/cake1.jpg);
+font: var(--font3);
+    background-repeat: no-repeat;
+  color: #7d4323;
+  padding-top: 100px;
+}
+
+
+.mainmenu:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.01);
+}
+
+.lower{
+    font: var(--font1);
+    font-size: 1rem; 
+    font-weight: 300;
+
+    line-height: 20pt;
+    
+}
