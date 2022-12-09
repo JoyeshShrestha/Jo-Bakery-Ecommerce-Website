@@ -1,6 +1,11 @@
-let menu = document.querySelectorAll('#menus');
+let menu1 = document.querySelectorAll('#menus');
 
-menu.addEventListener('click', function(){
+let butt= document.querySelector('#cart');
 
-    console.log('ok');
-})
+
+
+
+butt.addEventListener('click', function(){
+    console.log(here);
+    
+});

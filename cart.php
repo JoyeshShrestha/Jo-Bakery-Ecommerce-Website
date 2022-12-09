@@ -121,14 +121,36 @@ function pre_r($array){
                   <li><a class="dropdown-item" href="#">Contact Us</a></li>
                 </ul>
               </li>
+              
             </ul>
           </div>
         </div>
       </div>
     </nav>
   </header>
+  <div class="container-fluid fixed-bottom mb-5">
+  <button class="btn btn-outline-danger align-center mycartbutton " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><img class="px-2 py-2 " src="img/icon/cart.png" alt=""></button>
+  </div>    
+  <a href="cart.php"><div class="container-fluid menu " >
+    <div class="row">
 
-          <div class="container mt-5">
+
+      <div class="col  text-center   pb-5 " style="color: white; font-weight: 200; padding-top: 0px;" id="menus">
+        <div style=" color:rgb(251, 251, 251); font-size: 7rem;" >
+          Menu
+        </div>
+        <!-- <div class="icons"><img src="img/icon/facebook.png" alt=""></div> -->
+      </div>
+
+      <!-- <div class="col-6   text-center  align-middle border-start">
+        <button type="button" class="btn btn-dark mt-4 buttonhover rounded text-center align-middle btn-lg" ><p style="font-size: 2rem;">Menu</p></button>
+      </div> -->
+
+    </div>
+
+
+  </div></a>    
+  <div class="container mt-5 " >
           <div class="row">
           
           <?php
@@ -143,15 +165,15 @@ function pre_r($array){
                     while($product_table = mysqli_fetch_assoc($result)):
                         // print_r($product_table);
                        ?>
-                        <div class="col-sm-4 col-md-3" >
+                        <div class="col-sm-4 col-md-3 " >
                             <form method="post" action="cart.php?action=add&id=<?php echo $product_table["ID"]?>">
-                            <div class="products">
-                                <h4 class="text-primary"><?php echo $product_table['ProductName'];?></h4> 
-                                <h4 >$ <?php echo $product_table['ProductPrice'];?></h4> 
-                                <input type="text" name="quantity" class="form-control" value="1"/>
+                            <div class="products" id="bgcol">
+                                <h4 class="text second1heading"><?php echo $product_table['ProductName'];?></h4> 
+                                <h4 class="secondheading">$ <?php echo $product_table['ProductPrice'];?></h4> 
+                                <input type="text secondheading" name="quantity" class="form-control" value="1"/>
                                 <input type="hidden" name="name" value="<?php echo $product_table['ProductName'];?>" />
                                 <input type="hidden" name="price" value="<?php echo $product_table['ProductPrice'];?>" />
-                                <input type="submit" name="add_to_cart" class="btn btn-primary my-3 " value="Add to Cart" />
+                                <input type="submit" name="add_to_cart" class="btn btn-danger my-3 " value="Add to Cart" />
 </div>
                             </form>
                         </div>
@@ -165,11 +187,11 @@ function pre_r($array){
             ?></div>
             <div style="clear:both"></div>
             <br/>
-            <button class="btn btn-primary align-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
+            
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">My items</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body large">
@@ -233,7 +255,44 @@ function pre_r($array){
 </div>
 
 
-           
+<div class=" container border-top">
+
+<div class="container mt-5 pt-5 mb-5">
+  <div class="row mt-5">
+    <div class="col-4 text-left Subheading border-end">
+
+      
+      <div class=" mt-4 pb-3 border-bottom">About</div>
+      <div class=" mt-3 pb-3 border-bottom">Menu</div>
+      <div class=" mt-3">Follow us:</div>
+      <div class="row mt-3 container-fluid">
+        <div class="col-4"><img src="img/icon/face.png" alt=""></div>
+        
+        <div class="col-4"><img src="img/icon/insta.png" alt=""></div>
+        
+        <div class="col-4"><img src="img/icon/twit.png" alt=""></div>
+      </div>
+    </div>
+    <div class="col-4 text-left border-end">
+    
+      
+      <div class=" mt-4 pb-3 border-bottom">Contact</div>
+      <div class="lower mt-2 mb-5">Naxal <Br>
+      Kathmandu, Nepal<Br>
+      P.O. Box 6969<Br>
+      +977 1 545454756/87<Br>
+      sales@jobakery.com  <Br>
+    </div>
+    </div>
+    <div class="col-4 text-center">
+
+     
+      <div class="logo mt-4">Jo-Bakery.</div>
+      <div class="lower mt-2 mb-5" style="font-size: 0.75rem ;">@2022 All right reserved.<br> Website by: Joyesh </div>
+    </div>
+  </div>
+</div>
+</div> 
             
             
 </body>

@@ -1,9 +1,16 @@
 .products {
     border:1px solid #333;
-    background-color: aliceblue;
+    background-color: #fbb62c!important;
     border-radius: 5px;
     padding: 16px;
     margin-bottom: 20px;
+
+}
+
+#bgcol{
+    color: #fbb62c;
+
+
 
 }
 
@@ -23,7 +30,7 @@
 
 .button{
 
-    background: #6394f8;
+    background: #fbb62c;
     color: white;
     text-align: center;
     padding: 12px;
@@ -40,7 +47,7 @@
 }
 
 .button:hover {
-    background:#7fa9ff;
+    
     text-decoration:none;
     color: white;
 }
@@ -65,4 +72,13 @@ a:hover{
 }
 h3{
     margin-top: 0px;
+}
+.mycartbutton:hover{
+    background-color: aliceblue;
+    transform: scale(1.01);
+}
+
+.mycartbutton{
+   align-self: center;
+   background: #fbb62c;
 }
