@@ -5,6 +5,7 @@ $product_ids = array();
 
 //check if add to cart button has been submitted
 if(filter_input(INPUT_POST, 'add_to_cart')){
+  echo '<script>alert("Item successfully added")</script>';
     if(isset($_SESSION['shopping_cart'])){
 
         //keep track of how many products in shopping cart
@@ -55,6 +56,7 @@ if(filter_input(INPUT_GET, 'action')== 'delete'){
         if($product['id'] == filter_input(INPUT_GET, 'id')){
             //remove product from the shopping cart when it matches with the GET id
             unset($_SESSION['shopping_cart'][$key]);
+            echo '<script>alert("Item removed successfully")</script>';
         }
     }
     //reset session array keys so they match with $product_ids numeric array
@@ -92,7 +94,7 @@ function pre_r($array){
     <nav class="navbar navbar-expand-lg bg-light text-bg-light shadow ">
       <div class="container-fluid">
         <div class="logo">
-          <a class="navbar-brand ms-4 " href="#">Jo-Bakery.</a>
+          <a class="navbar-brand ms-4 " href="index.html">Jo-Bakery.</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -173,7 +175,7 @@ function pre_r($array){
                                 <input type="text secondheading" name="quantity" class="form-control" value="1"/>
                                 <input type="hidden" name="name" value="<?php echo $product_table['ProductName'];?>" />
                                 <input type="hidden" name="price" value="<?php echo $product_table['ProductPrice'];?>" />
-                                <input type="submit" name="add_to_cart" class="btn btn-danger my-3 " value="Add to Cart" />
+                                <input type="submit" name="add_to_cart" class="btn btn-danger my-3 " value="Add to Cart "/>
 </div>
                             </form>
                         </div>
@@ -241,7 +243,7 @@ function pre_r($array){
                     if(count($_SESSION['shopping_cart'])>0):
                         ?>
 
-                        <a href="#" class="button"> Checkout </a>
+                        <a href="signin.php" class="button"> Checkout </a>
 
                         <?php endif; endif; ?>
                     </td></tr>
@@ -257,7 +259,7 @@ function pre_r($array){
 
 <div class=" container border-top">
 
-<div class="container mt-5 pt-5 mb-5">
+<div class="container pt-5 mb-5">
   <div class="row mt-5">
     <div class="col-4 text-left Subheading border-end">
 

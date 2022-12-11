@@ -1,6 +1,6 @@
 .products {
     border:1px solid #333;
-    background-color: #fbb62c!important;
+    background-color: #f4c056ec!important;
     border-radius: 5px;
     padding: 16px;
     margin-bottom: 20px;
@@ -8,7 +8,7 @@
 }
 
 #bgcol{
-    color: #fbb62c;
+    color: rgb(0, 0, 0);
 
 
 
