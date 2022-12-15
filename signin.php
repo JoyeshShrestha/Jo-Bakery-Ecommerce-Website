@@ -12,6 +12,9 @@
 <body>
 
 
+<div class="alert alert-warning" role="alert">
+  We will contact you for the confirmation of your order.
+</div>
 
 <form action="signup_db.php" onsubmit="return validateForm()" method="post">
   <div class="container">

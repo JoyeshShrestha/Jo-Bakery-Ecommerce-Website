@@ -1,6 +1,6 @@
 .products {
-    border:1px solid #333;
-    background-color: #f4c056ec!important;
+    border:1px solid rgb(233, 50, 50);
+    background-color: #fdcc94!important;
     border-radius: 5px;
     padding: 16px;
     margin-bottom: 20px;
@@ -13,6 +13,11 @@
 
 
 }
+
+#neme{
+    font-size: 1rem;
+}
+
 
 .table{
     margin: 0px auto;
@@ -82,3 +87,9 @@ h3{
    align-self: center;
    background: #fbb62c;
 }
+
+.glow:hover{
+    transform: scale(1.01);
+    color: rgb(255, 0, 0);
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  }

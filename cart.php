@@ -109,19 +109,10 @@ function pre_r($array){
               <li class="nav-item">
                 <a class="nav-link me-4" href="#">About Us</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle me-4" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+              <li class="nav-item">
+              <a class="nav-link active me-4" aria-current="page" href="cart.php" >
                   Menu
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Bread</a></li>
-                  <li><a class="dropdown-item" href="#">Smoothies</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                </ul>
               </li>
               
             </ul>
@@ -153,7 +144,7 @@ function pre_r($array){
 
   </div></a>    
   <div class="container mt-5 " >
-          <div class="row">
+          <div class="row ">
           
           <?php
 
@@ -167,12 +158,12 @@ function pre_r($array){
                     while($product_table = mysqli_fetch_assoc($result)):
                         // print_r($product_table);
                        ?>
-                        <div class="col-sm-4 col-md-3 " >
+                        <div class="col-sm-4 col-md-3 glow " >
                             <form method="post" action="cart.php?action=add&id=<?php echo $product_table["ID"]?>">
                             <div class="products" id="bgcol">
-                                <h4 class="text second1heading"><?php echo $product_table['ProductName'];?></h4> 
-                                <h4 class="secondheading">$ <?php echo $product_table['ProductPrice'];?></h4> 
-                                <input type="text secondheading" name="quantity" class="form-control" value="1"/>
+                                <h4 class="text asecond1heading" id="neme"><?php echo $product_table['ProductName'];?></h4> 
+                                <h4 class="asecondheading" id="prece">$ <?php echo $product_table['ProductPrice'];?></h4> 
+                                <input type="text asecondheading" name="quantity" class="form-control" value="1"/>
                                 <input type="hidden" name="name" value="<?php echo $product_table['ProductName'];?>" />
                                 <input type="hidden" name="price" value="<?php echo $product_table['ProductPrice'];?>" />
                                 <input type="submit" name="add_to_cart" class="btn btn-danger my-3 " value="Add to Cart "/>
@@ -222,7 +213,7 @@ function pre_r($array){
                 <td>$ <?php echo number_format($product['quantity']*$product['price'],2); ?></td>
                 <td>
                     <a href="cart.php?action=delete&id=<?php echo $product['id'];?>">
-                    <div class="btn-danger"> Remove</div>
+                    <div class="btn btn-danger"> Remove</div>
         </a>
         </td>
         </tr>
@@ -264,15 +255,15 @@ function pre_r($array){
     <div class="col-4 text-left Subheading border-end">
 
       
-      <div class=" mt-4 pb-3 border-bottom">About</div>
-      <div class=" mt-3 pb-3 border-bottom">Menu</div>
-      <div class=" mt-3">Follow us:</div>
+    <a href="Index.html"><div class=" mt-4 pb-3 border-bottom" >About</div></a>
+        <a href="cart.php"><div class=" mt-3 pb-3 border-bottom">Menu</div></a>
+      <div class=" mt-3">Thank you</div>
       <div class="row mt-3 container-fluid">
-        <div class="col-4"><img src="img/icon/face.png" alt=""></div>
+        <!-- <div class="col-4"><img src="img/icon/face.png" alt=""></div>
         
         <div class="col-4"><img src="img/icon/insta.png" alt=""></div>
         
-        <div class="col-4"><img src="img/icon/twit.png" alt=""></div>
+        <div class="col-4"><img src="img/icon/twit.png" alt=""></div> -->
       </div>
     </div>
     <div class="col-4 text-left border-end">
@@ -302,3 +293,13 @@ function pre_r($array){
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<style>
+  a:link { text-decoration: none; 
+  color:black;}
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none;  color:black;}
+a:active { text-decoration: none; color:black;}
+
+
+</style>

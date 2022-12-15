@@ -62,6 +62,12 @@ body{
     color: #7d4323;
   
 }
+.asecondheading{
+    font: var(--font2);
+    font-size: 0.85rem; 
+    color: #7d4323;
+  
+}
 
 .second1heading{
     font: var(--font1);
@@ -71,6 +77,13 @@ body{
     
 }
 
+.asecond1heading{
+    font: var(--font1);
+    font-size: 2rem; 
+    font-weight: bolder;
+   margin-top: -5px;
+    
+}
 
 .uppertext{
     font: var(--font1);
@@ -133,3 +146,9 @@ font: var(--font3);
     line-height: 20pt;
     
 }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
