@@ -11,3 +11,5 @@ Hello, this is my summer project which I worked on my basic html, css, js, and p
 ![Screenshot 2022-12-11 at 10-03-33 Shopping cart](https://user-images.githubusercontent.com/84576929/207801972-10d5506f-0700-44d4-94ca-995dba79d9e9.png)
 
 ![Screenshot 2022-12-12 at 11-29-43 Admin](https://user-images.githubusercontent.com/84576929/207802079-eb623f02-ec39-4e18-81dc-fec4d3d65138.png)
+
+![image](https://user-images.githubusercontent.com/84576929/207802471-62108145-8f29-4e96-b564-95307e4afe90.png)
